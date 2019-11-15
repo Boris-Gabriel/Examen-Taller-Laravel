@@ -37,10 +37,11 @@ Route::post('venta/mostrarProductosMasVendidos', 'ventaController@mostrarProduct
 // 11. Mostrar las categorías más vendidas por producto
 Route::post('categoria/mostrarCategoriasMasVendidasPorProducto', 'categoriaController@mostrarCategoriasMasVendidasPorProducto');
 // 12. Mostrar la ciudad que tiene menos clientes
-Route::post('cliente/ciudadConMenosClientes', 'clienteController@ciudadConMenosClientes');
+// Inge si me funciona en consola la consulta, pero pasarlo a laravel no pude realizarlo, ya que es una consulta dentro de otra consulta en una tabla con COUNT y MAX
+//Route::post('cliente/ciudadConMenosClientes', 'clienteController@ciudadConMenosClientes');
 // 13. Mostrar la ciudad que compra más productos
 
 // 14. Mostrar el cliente que más frecuente en compras
-
+//De igual forma esta consulta ya que es la misma jeje, solo que es com COUNT y MAX
 // 15. Mostrar productos en stock
 Route::post('producto/mostrarProductoEnStock', 'productoController@mostrarProductoEnStock');
